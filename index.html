@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIZARRO!</title>
 
     <style>
-        
         main {
             background-color: rgb(18, 19, 18);
             background-color: #000000;
@@ -15,10 +15,11 @@
             max-width: 1500px;
             margin: 0 auto;
             padding: 15px;
-             border: 5px solid #020202;
+            border: 5px solid #020202;
+            ;
         }
-        
-        h1 { 
+
+        h1 {
             background-color: #000000;
             color: rgb(255, 255, 254);
             text-align: center;
@@ -27,30 +28,48 @@
             padding: 15px;
             border: 5px solid #000000;
         }
-                img {
-                    width: 600px;
-                    height: 500px;
-            }
+
+        img {
+            width: 600px;
+            height: 500px;
+        }
+
+        .autor-bizarro {
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
-   <div>
-    <header>
-    <main>
-        <h1>SITE BIZARRO</h1>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6oPbwYhZTnAkutQO-kJL5UsLywu1DJOb21WEe7tBVsQ&s=10" alt="Raposito BIZARRO!">
-    </header>
-</div>
-<div>
-    <h1>Esse site é BIZARRO!</h1>
+    <div>
+        <header>
+            <main>
+                <h1>SITE BIZARRO</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6oPbwYhZTnAkutQO-kJL5UsLywu1DJOb21WEe7tBVsQ&s=10"
+                    alt="Raposito BIZARRO!">
+        </header>
+    </div>
+    <div>
+        <h1>Esse site é BIZARRO!</h1>
 
 
-</h1> Nesse site você vai encontrar assuntos bizarros!</h1>
+        </h1> Nesse site você vai encontrar assuntos bizarros!</h1>
 
-    
-   <h3>Temas bizarros: Poesias indies e coisas sobre os pensamentos de Victoryni, que é BIZARRO.</h3>
-</div>
-</main>
-    <p>Site BIZARRO por: Victoryni (Pedro Henrique Vitorino) BIZARRO</p>
+
+        <h3>Temas bizarros: Poesias indies e coisas sobre os pensamentos de Victoryni, que é BIZARRO.</h3>
+        <button>💜​<span>0</span></button>
+    </div>
+    </main>
+    <p class="autor-bizarro">Site BIZARRO por: Victoryni (Pedro Henrique Vitorino) BIZARRO</p>
 </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado (){
+        console.log("fui clicado");
+        let texto = botao.carrySelctor("span");
+        texto.textContent++;
+    }
+</script>
+
 </html>
